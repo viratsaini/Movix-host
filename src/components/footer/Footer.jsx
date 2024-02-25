@@ -4,6 +4,9 @@ import {
     FaInstagram,
     FaTwitter,
     FaLinkedin,
+    FaGit,
+    FaGitSquare,
+    FaGithub,
 } from "react-icons/fa";
 
 import ContentWrapper from "../contentWrapper/ContentWrapper";
@@ -13,10 +16,10 @@ import "./style.scss";
 const Footer = () => {
     // Define sample social media links
     const socialMediaLinks = {
-        facebook: "https://x.com/ShivangRGaur?t=3UNvEwTFijc6qdlZuuEWaA&s=09",
-        instagram: "https://www.instagram.com/ahamshivang?utm_source=qr&igsh=MWdtZ280ZTIxb3o5bw==",
-        twitter: "https://x.com/ShivangRGaur?t=3UNvEwTFijc6qdlZuuEWaA&s=09",
-        linkedin: "https://www.linkedin.com/in/shivang-gaur-b088b7195?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        facebook: "https://www.facebook.com/sainiji.guru",
+        instagram: "https://www.instagram.com/virat_saini___/",
+        github: "https://github.com/viratsaini",
+        linkedin: "https://www.linkedin.com/in/virat-saini/",
     };
 
     return (
@@ -34,17 +37,19 @@ const Footer = () => {
                 </div>
                 <div className="socialIcons">
                     {/* Add onClick handlers to open social media links */}
-                    <span className="icon" onClick={() => window.open(socialMediaLinks.facebook, "_blank")}>
-                        <FaFacebookF />
+                    
+                    <span className="icon" onClick={() => window.open(socialMediaLinks.linkedin, "_blank")}>
+                        <FaLinkedin />
                     </span>
+                    <span className="icon" onClick={() => window.open(socialMediaLinks.github, "_blank")}>
+                        <FaGithub />
+                    </span>
+                    
                     <span className="icon" onClick={() => window.open(socialMediaLinks.instagram, "_blank")}>
                         <FaInstagram />
                     </span>
-                    <span className="icon" onClick={() => window.open(socialMediaLinks.twitter, "_blank")}>
-                        <FaTwitter />
-                    </span>
-                    <span className="icon" onClick={() => window.open(socialMediaLinks.linkedin, "_blank")}>
-                        <FaLinkedin />
+                    <span className="icon" onClick={() => window.open(socialMediaLinks.facebook, "_blank")}>
+                        <FaFacebookF />
                     </span>
                 </div>
             </ContentWrapper>
